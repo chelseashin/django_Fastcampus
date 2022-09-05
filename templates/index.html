@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% comment %} TODO: 5. base.html 템플릿을 만들어 모든 페이지에서 상속받아 보여주세요 {% endcomment %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %} INDEX  {% endblock %}</title>
+  {% comment %} TODO: 6. bootstrap 스타일을 적용해주세요	 {% endcomment %}
+</head>
+
+<body>
+  {% block content %}
+  <div class="container">
+      {% comment %} TODO: 4. /index 페이지에는 로그인 한 유저 이름을 출력해야 합니다. ex) hello, 홍길동 {% endcomment %}
+
+    {% if user.is_authenticated %}
+      <b>Hello, {{ user.username }} ~~~~~~~ !!</b>
+      <p><a href="{% url 'logout' %}" class="btn btn-primary">로그아웃</a></p>
+    {% else %}
+      <p><a href="{% url 'login' %}" class="btn btn-primary"> 로그인 </a></p>
+      <p><a href="{% url 'register' %}" class="btn btn-primary"> 회원가입 </a></p>
+    {% endif %}
+  </div>
+
+  {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\final_project\final_project\manage.py", line 22, in <module>
+    main()
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\final_project\final_project\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\core\management\__init__.py", line 386, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\conf\__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\conf\__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\conf\__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Anaconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\final_project\final_project\final_project\settings.py", line 31, in <module>
+    ENV = os.environ.ge("DJANGO_ENV", "dev")
+AttributeError: '_Environ' object has no attribute 'ge'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\final_project\final_project\manage.py", line 22, in <module>
+    main()
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\final_project\final_project\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\core\management\__init__.py", line 386, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\conf\__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\conf\__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\venv\lib\site-packages\django\conf\__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Anaconda3\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\Users\user\Desktop\final-project-신채원\final-project-remake\final_project\final_project\final_project\settings.py", line 31, in <module>
+    ENV = os.environ.ge("DJANGO_ENV", "dev")
+AttributeError: '_Environ' object has no attribute 'ge'
